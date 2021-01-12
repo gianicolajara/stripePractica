@@ -1,0 +1,86 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(233, 233, 233);
+}
+
+.card {
+  flex: 0 1 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgb(221, 221, 221);
+  cursor: pointer;
+  transition: 0.3s all ease;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card .card__body {
+  text-align: center;
+  background-color: #007bff;
+  padding: 15px;
+}
+
+.card .card__head {
+  background-color: white;
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card figure {
+  margin: 0;
+}
+
+.card .card__title {
+  font-size: 1.3em;
+  color: white;
+  margin: 0;
+  margin: 5px;
+}
+
+.card .card__description {
+  color: white;
+}
+
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 5px 1px rgb(189, 189, 189);
+}
+
+.price {
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  padding: 5px;
+  right: 0;
+  background-color: #28a745;
+  color: white;
+  border-radius: 15px;
+}
